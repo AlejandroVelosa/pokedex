@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import useFecht from "../../hooks/useFecht"
 import { useNavigate } from "react-router-dom"
-import './styles/PokeCard.css'
+import './styles/Pokecard.css'
 
 
 const PokeCard = ({ url }) => {
