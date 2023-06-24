@@ -1,0 +1,343 @@
+.pokedexName-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_input-buttos {
+    position: absolute;
+    top: 1.5rem;
+    right: .6rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.9rem;
+    color: white;
+
+}
+
+@media screen and (min-width:1000px) {
+    .container_input-buttos {
+        left: 1rem;
+        top: 6rem;
+        width: 50px;
+        font-size: 3rem;
+        position: fixed;
+        color: black;
+
+    }
+}
+
+.container_input-logos .pokedex {
+    position: absolute;
+    top: 2.6rem;
+    left: 1rem;
+    max-width: 170px
+}
+
+.pokebal_fondo {
+    display: none;
+}
+
+.car_grande {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.422);
+}
+
+.car_grande-container-img {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.car_grande-img {
+    width: 300px;
+    height: 300px;
+    animation: moveUpDown 2s infinite alternate;
+
+}
+
+.car_grande-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.car_grande-id {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.car_grande-name {
+    text-transform: capitalize;
+}
+
+.car_grande-datos {
+
+    display: flex;
+    gap: 3rem;
+}
+
+.car_grande-datos li {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    align-items: center;
+}
+
+.car_grande-datos-number {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.car_grande-types {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.car_grande-id {
+    font-weight: bold;
+    display: flex;
+    gap: .2rem;
+}
+
+.car_grande-type-name {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.car_grande-type {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.car_grande-type-ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+.car_grande-type-li {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    width: 100%;
+    padding: 0.6rem;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+
+
+.barras-container-stats {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.barras-container-name {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+
+}
+
+.barras-container-nameimg {
+    position: relative;
+}
+
+.barra-container-img {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    width: 100px;
+}
+
+.barras_container-stats-power {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+}
+
+.barras_container-stats-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.barras_container-stats-name {
+    width: 100%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-top: 0.3rem;
+}
+
+.barra {
+    height: 1rem;
+    background-color: #59393972;
+    margin-top: 5px;
+}
+
+.barras-container {
+    margin-bottom: 10px;
+    padding: 2rem;
+
+}
+
+
+.barras-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.barras-container li span {
+    margin-right: 5px;
+}
+
+.barras-container li .barra {
+    width: 100%;
+}
+
+.barras-container li .barra-fill {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(90deg, #FCD676 0%, #E6901E 100%);
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.normal {
+    color: #735259;
+}
+
+.fighting {
+    color: #96402A;
+}
+
+.fire {
+    color: #e75c35;
+}
+
+.poison {
+    color: #5b3184;
+}
+
+.ground {
+    color: #654008;
+}
+
+.rock {
+    color: #7e7e7e;
+}
+
+.bug {
+    color: #4ab64b;
+}
+
+.ghost {
+    color: #323569;
+}
+
+.steel {
+    color: #5e736c;
+}
+
+.water {
+    color: #1479FB;
+}
+
+.grass {
+    color: #416460;
+}
+
+.electric {
+    color: #0C1395;
+}
+
+.psychic {
+    color: #E52D2D;
+}
+
+.ice {
+    color: #6FBEDF;
+}
+
+.dragon {
+    color: #478A93;
+}
+
+.dark {
+    color: #030706;
+}
+
+.fairy {
+    color: #971B45;
+}
+
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

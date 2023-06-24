@@ -1,0 +1,41 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pokeContainer {}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+button {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: .2rem;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button.active {
+    font-weight: bold;
+    color: white;
+    background-color: #dd1a1a;
+}
+
+@media screen and (max-width: 600px) {
+    .pagination {
+        flex-direction: row;
+        align-items: center;
+    }
+}

@@ -1,0 +1,54 @@
+.container_principal {
+    min-height: 100vh;
+
+}
+
+.container_principal-footer {
+    background-color: rgba(0, 0, 0, 0.956);
+    color: white;
+    min-height: 15vh;
+    position: relative;
+}
+
+.container_principal-footer .reds {
+    background-color: #dd1a1a;
+    min-height: 9vh;
+}
+
+.container_principal-footer .pokeball {
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    animation: rotate 8s linear infinite;
+
+}
+
+.container_principal-footer .pokeball:hover {
+    transform: rotate(360deg);
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(-360deg);
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .container_principal-footer .pokeball {
+        top: 1.9rem;
+        width: 90px;
+    }
+}
