@@ -1,5 +1,5 @@
 import PokeCard from "./PokeCard"
-import './styles/PokeCard.css'
+import './styles/Pokecard.css'
 import Pagination from "./Pagination";
 import { useState } from "react";
 
