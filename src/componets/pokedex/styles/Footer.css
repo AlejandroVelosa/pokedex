@@ -19,7 +19,7 @@
     position: absolute;
     width: 60px;
     left: 50%;
-    top: 1rem;
+    top: 1.3rem;
     transform: translateX(-50%);
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
     animation: rotate 8s linear infinite;
@@ -48,7 +48,7 @@
 
 @media screen and (min-width: 1300px) {
     .container_principal-footer .pokeball {
-        top: 1.9rem;
-        width: 90px;
+        top: 1.6rem;
+        width: 80px;
     }
 }
